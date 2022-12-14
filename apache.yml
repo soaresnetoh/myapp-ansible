@@ -1,5 +1,6 @@
 ---
-- hosts: webservers 
+- name: Install apache
+  hosts: webservers 
   become: True
   tasks:
     - name: Install packages
